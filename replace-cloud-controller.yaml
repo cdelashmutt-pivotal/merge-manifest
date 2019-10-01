@@ -1,0 +1,9 @@
+- type: replace
+  path: /instance_groups/name=cloud_controller
+  value: ((cloud_controller_yaml))
+- type: replace
+  path: /instance_groups/name=clock_global
+  value: ((clock_global_yaml))
+- type: replace
+  path: /instance_groups/name=cloud_controller_worker
+  value: ((cloud_controller_worker_yaml))
